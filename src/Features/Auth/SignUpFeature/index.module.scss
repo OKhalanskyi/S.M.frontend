@@ -1,0 +1,89 @@
+.signUpMenu {
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-rows: 103px auto;
+    .signUpLogo {
+        display: grid;
+        background-color: white;
+        margin-top: 36px;
+        img {
+            width: 175px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+    .signUpForm {
+        display: grid;
+        background-color: white;
+        grid-template-rows: 57px 44px 43px 44px 44px 44px 44px 121px 48px;
+        .textInstruction {
+            text-align: center;
+            justify-self: center;
+            line-height: 12pt;
+            width: 266px;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(142, 142, 142);
+            margin-top: 10px;
+            a {
+                color: rgb(0, 55, 107);
+            }
+        }
+        .facebookLogo {
+            width: 16px;
+            height: 16px;
+            background: url('src/Shared/assets/FacebookLogo.png');
+            background-size: cover;
+            margin-right: 8px;
+        }
+        .separator {
+            display: grid;
+            width: 268px;
+            grid-template-columns: 107px 54px 107px;
+            justify-self: center;
+            align-items: center;
+            align-self: center;
+            .separateText {
+                font-weight: 600;
+                font-size: 12px;
+                color: rgb(142, 142, 142);
+                text-align: center;
+            }
+            .line {
+                height: 1px;
+                width: 100%;
+                background-color: rgb(219, 219, 219);
+            }
+        }
+        h2 {
+            font-size: 17px;
+            text-align: center;
+            font-weight: 550;
+            line-height: 20px;
+            color: rgb(142, 142, 142);
+            margin: 0 38px 15px;
+        }
+    }
+}
+
+.haveAnAccount {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    p {
+        padding-bottom: 10px;
+    }
+    a {
+        color: rgb(0, 149, 246);
+    }
+}
+
+.active:hover {
+    background-color: red;
+}

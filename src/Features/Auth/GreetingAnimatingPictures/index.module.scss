@@ -1,0 +1,15 @@
+.animatingPictures {
+    align-self: center;
+    width: 380px;
+    height: 581px;
+    background-image: url('src/Shared/assets/iphoneImg.png');
+    background-size: cover;
+}
+
+.displayImg {
+    position: absolute;
+    margin-left: 108px;
+    margin-top: 26px;
+    width: 250px;
+    background-color: transparent;
+}

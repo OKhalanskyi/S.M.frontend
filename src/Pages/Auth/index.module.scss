@@ -1,0 +1,16 @@
+.root {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f3f5;
+    justify-content: center;
+    grid-template-rows: 907px 134px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 412px auto;
+    width: 762px;
+    height: 100%;
+    justify-self: center;
+}

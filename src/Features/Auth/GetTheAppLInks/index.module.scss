@@ -1,0 +1,23 @@
+.getTheAppWrapper {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin-top: 10px;
+    h6 {
+        font-weight: 400;
+        font-size: 14px;
+        justify-self: center;
+        align-self: center;
+    }
+    .getTheAppLinks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 10px;
+        margin-left: 35px;
+        margin-right: 35px;
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}

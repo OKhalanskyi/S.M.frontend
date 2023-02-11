@@ -1,0 +1,15 @@
+.selector {
+    display: flex;
+    justify-self: center;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    text-align: end;
+    width: fit-content;
+    color: rgb(142, 142, 142);
+    font-size: 12px;
+    font-weight: 400;
+    option {
+        width: fit-content;
+    }
+}

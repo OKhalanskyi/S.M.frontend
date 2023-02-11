@@ -4,6 +4,7 @@ import english from './translation/english.json'
 import ukrainian from './translation/ukrainian.json'
 
 i18n.use(initReactI18next).init({
+    lng: 'en',
     fallbackLng: 'en',
     resources: {
         en: {

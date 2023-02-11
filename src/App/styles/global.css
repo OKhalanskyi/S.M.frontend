@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
 }
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: #f2f3f5;
+}
 
 button {
     cursor: pointer;
@@ -24,4 +30,7 @@ input {
 }
 a {
     text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
 }

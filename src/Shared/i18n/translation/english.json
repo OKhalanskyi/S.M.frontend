@@ -1,4 +1,46 @@
 {
-    "hello": "hello suka",
-    "tinker": "sluts son"
+    "signUp": {
+        "invitationText": "Sign up to see photos and videos from your friends.",
+        "loginWithFacebook": "Log in with Facebook",
+        "placeholders": {
+            "email": "Mobile number or email address",
+            "fullName": "Full name",
+            "username": "Username",
+            "password": "Password"
+        },
+        "or": "OR",
+        "instructions": {
+            "top": "People who use our service may have uploaded your contact information to Instagram.",
+            "bottom": "By signing up, you agree to our",
+            "and": "and",
+            "links": {
+                "learnMore": " Learn More",
+                "terms": " Terms",
+                "privacyPolicy": " Privacy Policy ",
+                "cookiesPolicy": " Cookies Policy",
+                "and": "and"
+            }
+        },
+        "signUp": "Sign up",
+        "haveAnAccount": {
+            "text": "Have an account?",
+            "link": " Log in"
+        },
+        "getTheApp": "Get the app."
+    },
+    "footer": {
+        "meta": "Meta",
+        "about": "About",
+        "blog": "Blog",
+        "jobs": "Jobs",
+        "help": "Help",
+        "api": "API",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "topAccounts": "Top accounts",
+        "locations": "Locations",
+        "instagramLite": "Instagram Lite",
+        "contact": "Contact uploading and non-users",
+        "watermark": "© 2023 Instagram from Meta"
+    }
 }

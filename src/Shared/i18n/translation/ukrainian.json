@@ -1,4 +1,46 @@
 {
-    "hello": "слава україні",
-    "tinker": "героям слвва"
+    "signUp": {
+        "invitationText": "Зареєструйтеся, щоб переглядати світлини та відео від друзів.",
+        "loginWithFacebook": "Увійти через Facebook",
+        "placeholders": {
+            "email": "Номер мобільного телефону або електр..",
+            "fullName": "Повне ім'я",
+            "username": "Ім'я користувача",
+            "password": "Пароль"
+        },
+        "or": "АБО",
+        "instructions": {
+            "top": "Люди, які користуються нашим сервісом, могли завантажити вашу контактну інформацію в Instagram.",
+            "bottom": "Реєструючись, ви приймаєте наші",
+            "and": "і",
+            "links": {
+                "learnMore": " Докладніше",
+                "terms": " Умови",
+                "privacyPolicy": " Політику конфіденційності ",
+                "cookiesPolicy": " Політику щодо файлів cookie",
+                "and": "and"
+            }
+        },
+        "signUp": "Зареєструватися",
+        "haveAnAccount": {
+            "text": "У вас є обліковий запис?",
+            "link": " Увійдіть"
+        },
+        "getTheApp": "Завантажити додаток."
+    },
+    "footer": {
+        "meta": "Meta",
+        "about": "Інформація",
+        "blog": "Блоґ",
+        "jobs": "Вакансії",
+        "help": "Довідка",
+        "api": "API",
+        "privacy": "Конфіденційність",
+        "terms": "Умови",
+        "topAccounts": "Популярні облікові записи",
+        "locations": "Розташування",
+        "instagramLite": "Instagram Lite",
+        "contact": "Завантаження контактів і люди, що не є користувачами",
+        "watermark": "© 2023 Instagram from Meta"
+    }
 }
