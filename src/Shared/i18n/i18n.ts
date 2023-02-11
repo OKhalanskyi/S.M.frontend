@@ -4,8 +4,7 @@ import english from './translation/english.json'
 import ukrainian from './translation/ukrainian.json'
 
 i18n.use(initReactI18next).init({
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: localStorage.getItem('language') || 'en',
     resources: {
         en: {
             translation: english,
@@ -13,5 +12,8 @@ i18n.use(initReactI18next).init({
         ua: {
             translation: ukrainian,
         },
+    },
+    interpolation: {
+        escapeValue: false,
     },
 })
