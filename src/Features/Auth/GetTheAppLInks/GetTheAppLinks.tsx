@@ -9,7 +9,7 @@ const GetTheAppLinks = () => {
 
     return (
         <div className={styles.getTheAppWrapper}>
-            <h6>{t('signUp.getTheApp')}</h6>
+            <h6>{t('auth.getTheApp')}</h6>
             <div className={styles.getTheAppLinks}>
                 <a>
                     <img src={appStoreLink} />

@@ -1,9 +1,9 @@
-.signUpMenu {
+.signInMenu {
     background-color: white;
     margin-bottom: 10px;
     border: 1px solid lightgray;
     display: grid;
-    grid-template-rows: 103px 530px;
+    grid-template-rows: 103px 297px;
     .signUpLogo {
         display: grid;
         background-color: white;
@@ -14,27 +14,19 @@
             justify-self: center;
         }
     }
-    .signUpForm {
+    .signInForm {
         display: grid;
-        background-color: white;
-        grid-template-rows: 57px 44px 43px 44px 44px 44px 44px 121px 48px;
-        .textInstruction {
-            text-align: center;
-            justify-self: center;
-            line-height: 12pt;
-            width: 266px;
-            font-size: 12px;
-            font-weight: 400;
-            color: rgb(142, 142, 142);
-            margin-top: 10px;
-            a {
-                color: rgb(0, 55, 107);
-            }
+        grid-template-rows: 44px 44px 48px 43px 36px 28px;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+        .btnContainer {
+            padding-top: 7px;
         }
         .facebookLogo {
             width: 16px;
             height: 16px;
-            background: url('../../../Shared/assets/facebookLogoWhite.png');
+            background: url('../../../Shared/assets/facebookLogoOrig.png');
             background-size: cover;
             margin-right: 8px;
         }
@@ -57,17 +49,11 @@
                 background-color: rgb(219, 219, 219);
             }
         }
-        h2 {
-            font-size: 17px;
-            text-align: center;
-            font-weight: 550;
-            line-height: 20px;
-            color: rgb(142, 142, 142);
-            margin: 0 38px 15px;
+        .forgotPassLink {
+            margin-top: 16px;
+            color: rgb(0, 55, 107);
+            font-size: 12px;
+            justify-self: center;
         }
     }
-}
-
-.active:hover {
-    background-color: red;
 }

@@ -1,11 +1,6 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { AuthButtonStyled } from './Styled'
-
-type AuthButtonProps = {
-    disabled: boolean
-    children: ReactNode
-    onClick: () => void
-}
+import { AuthButtonProps } from './types'
 
 const AuthButton = (props: AuthButtonProps) => {
     return (

@@ -12,4 +12,44 @@
     margin-top: 26px;
     width: 250px;
     background-color: transparent;
+    opacity: 0;
+}
+
+.img1 {
+    animation: changing 24s infinite;
+    z-index: 4;
+}
+
+.img2 {
+    animation: changing 24s 6s linear infinite;
+    z-index: 3;
+}
+
+.img3 {
+    animation: changing 24s 12s linear infinite;
+    z-index: 2;
+}
+
+.img4 {
+    animation: changing 24s 18s linear infinite;
+    z-index: 1;
+}
+
+@keyframes changing {
+    0% {
+        opacity: 0;
+        transition: ease;
+    }
+    7% {
+        transition: ease;
+        opacity: 1;
+    }
+    25% {
+        transition: ease;
+        opacity: 1;
+    }
+    33% {
+        transition: ease;
+        opacity: 0;
+    }
 }

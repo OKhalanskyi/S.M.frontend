@@ -1,32 +1,46 @@
 {
-    "signUp": {
-        "invitationText": "Sign up to see photos and videos from your friends.",
+    "auth": {
         "loginWithFacebook": "Log in with Facebook",
-        "placeholders": {
-            "email": "Mobile number or email address",
-            "fullName": "Full name",
-            "username": "Username",
-            "password": "Password"
-        },
         "or": "OR",
-        "instructions": {
-            "top": "People who use our service may have uploaded your contact information to Instagram.",
-            "bottom": "By signing up, you agree to our",
-            "and": "and",
-            "links": {
-                "learnMore": " Learn More",
-                "terms": " Terms",
-                "privacyPolicy": " Privacy Policy ",
-                "cookiesPolicy": " Cookies Policy",
-                "and": "and"
-            }
-        },
-        "signUp": "Sign up",
         "haveAnAccount": {
             "text": "Have an account?",
             "link": " Log in"
         },
-        "getTheApp": "Get the app."
+        "dontHaveAnAccount": {
+            "text": "Don't have an account?",
+            "link": " Sign up"
+        },
+        "getTheApp": "Get the app.",
+        "signUp": {
+            "invitationText": "Sign up to see photos and videos from your friends.",
+            "placeholders": {
+                "email": "Mobile number or email address",
+                "fullName": "Full name",
+                "username": "Username",
+                "password": "Password"
+            },
+            "instructions": {
+                "top": "People who use our service may have uploaded your contact information to Instagram.",
+                "bottom": "By signing up, you agree to our",
+                "and": "and",
+                "links": {
+                    "learnMore": " Learn More",
+                    "terms": " Terms",
+                    "privacyPolicy": " Privacy Policy ",
+                    "cookiesPolicy": " Cookies Policy",
+                    "and": "and"
+                }
+            },
+            "signUp": "Sign up"
+        },
+        "signIn": {
+            "placeholders": {
+                "email": "Phone number, username or email address",
+                "password": "Password"
+            },
+            "forgotPassword": "Forgotten your password?",
+            "signIn": "Log in"
+        }
     },
     "footer": {
         "meta": "Meta",

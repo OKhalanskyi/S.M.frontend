@@ -1,0 +1,23 @@
+.authFormWidget {
+    display: grid;
+    width: 350px;
+    justify-self: end;
+    align-self: center;
+    grid-template-rows: auto 70px 95px;
+    margin-top: 12px;
+}
+.haveAnAccount {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    p {
+        padding-bottom: 10px;
+    }
+    a {
+        color: rgb(0, 149, 246);
+    }
+}
