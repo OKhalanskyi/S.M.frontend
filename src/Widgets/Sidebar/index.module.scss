@@ -1,0 +1,10 @@
+.sidebar {
+    display: grid;
+    position: fixed;
+    border-right: 1px solid lightgray;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px 20px 12px;
+    grid-template-rows: 92px auto 56px;
+    transition: linear 0.5s;
+}

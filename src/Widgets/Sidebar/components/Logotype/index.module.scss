@@ -1,0 +1,42 @@
+.logoLong {
+    display: flex;
+    transition: all 0.5s;
+    a {
+        padding: 22px 10px 15px 10px;
+        margin-bottom: 19px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.logoShort {
+    display: flex;
+    transition: all 0.5s;
+    .link {
+        display: flex;
+        span {
+            display: flex;
+            justify-content: center;
+            width: 46px;
+            height: 46px;
+            align-self: center;
+            border-radius: 50%;
+            background-color: transparent;
+            img {
+                width: 24px;
+                height: 24px;
+                align-self: center;
+                justify-self: center;
+            }
+            :hover {
+                transform: scale(1.04);
+            }
+        }
+        :hover {
+            background-color: rgb(250, 250, 250);
+        }
+    }
+}
