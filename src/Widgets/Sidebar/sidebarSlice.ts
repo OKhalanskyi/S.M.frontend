@@ -14,11 +14,15 @@ export enum SidebarLinks {
 export interface SidebarState {
     isOpen: boolean
     activeLink: SidebarLinks
+    searchPanel: boolean
+    notifyPanel: boolean
 }
 
 const initialState: SidebarState = {
     isOpen: true,
     activeLink: SidebarLinks.Home,
+    searchPanel: false,
+    notifyPanel: false,
 }
 
 export const sidebarSlice = createSlice({
@@ -31,8 +35,19 @@ export const sidebarSlice = createSlice({
         changeLink: (state, action: PayloadAction<SidebarLinks>) => {
             state.activeLink = action.payload
         },
+        toggleSearchPanel: (state, action: PayloadAction<boolean>) => {
+            state.searchPanel = action.payload
+        },
+        toggleNotifyPanel: (state, action: PayloadAction<boolean>) => {
+            state.notifyPanel = action.payload
+        },
     },
 })
 
-export const { toggleSidebar, changeLink } = sidebarSlice.actions
+export const {
+    toggleSidebar,
+    changeLink,
+    toggleSearchPanel,
+    toggleNotifyPanel,
+} = sidebarSlice.actions
 export default sidebarSlice.reducer

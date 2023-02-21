@@ -7,6 +7,7 @@ const DirectPage = () => {
     useEffect(() => {
         dispatch(changeLink(SidebarLinks.Direct))
     })
+
     return <div>direct</div>
 }
 

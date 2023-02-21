@@ -20,12 +20,9 @@ const defaultState = {
     setLanguage: (language: Language) => {},
 } as ILanguageContextInterface
 
-const LanguageContext = createContext(defaultState)
+const LanguageContext = createContext<ILanguageContextInterface>(defaultState)
 
-const useLanguage = () => {
-    const context = useContext(LanguageContext)
-    return context
-}
+const useLanguage = () => useContext(LanguageContext)
 
 type LanguageProvidedProps = {
     children: ReactNode

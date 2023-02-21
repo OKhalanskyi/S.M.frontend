@@ -1,6 +1,11 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
-import { changeLink, SidebarLinks, toggleSidebar } from '../../sidebarSlice'
+import {
+    changeLink,
+    SidebarLinks,
+    toggleNotifyPanel,
+    toggleSearchPanel,
+    toggleSidebar,
+} from '../../sidebarSlice'
 import { Routes } from '../../../../App/providers/Routes'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '../../../../App/providers/withRedux'
@@ -23,11 +28,8 @@ import SidebarNavLink from '../SidebarNavItem/SidebarNavLink'
 import SidebarNavBtn from '../SidebarNavItem/SidebarNavBtn'
 
 const SidebarNav = () => {
-    const location = useLocation()
     const sidebarSlice = useSelector((state: RootState) => state.sidebar)
     const dispatch = useDispatch()
-
-    console.log(sidebarSlice.activeLink)
 
     return (
         <div
@@ -41,6 +43,8 @@ const SidebarNav = () => {
                 route={Routes.Home}
                 link={SidebarLinks.Home}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(false))
                     dispatch(changeLink(SidebarLinks.Home))
                     dispatch(toggleSidebar(true))
                 }}
@@ -55,6 +59,8 @@ const SidebarNav = () => {
                 imgPassive={searchPassive}
                 text={'Search'}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(!sidebarSlice.searchPanel))
                     if (sidebarSlice.activeLink !== SidebarLinks.Search) {
                         dispatch(changeLink(SidebarLinks.Search))
                     }
@@ -97,6 +103,8 @@ const SidebarNav = () => {
                 route={Routes.Explore}
                 link={SidebarLinks.Explore}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(false))
                     dispatch(changeLink(SidebarLinks.Explore))
                     dispatch(toggleSidebar(true))
                 }}
@@ -109,6 +117,8 @@ const SidebarNav = () => {
                 route={Routes.Reels}
                 link={SidebarLinks.Reels}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(false))
                     dispatch(changeLink(SidebarLinks.Reels))
                     dispatch(toggleSidebar(true))
                 }}
@@ -121,6 +131,8 @@ const SidebarNav = () => {
                 route={Routes.Direct}
                 link={SidebarLinks.Direct}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(false))
                     dispatch(changeLink(SidebarLinks.Direct))
                     dispatch(toggleSidebar(true))
                 }}
@@ -135,6 +147,8 @@ const SidebarNav = () => {
                 imgPassive={notifyPassive}
                 text={'Notifications'}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(!sidebarSlice.notifyPanel))
+                    dispatch(toggleSearchPanel(false))
                     if (
                         sidebarSlice.activeLink !== SidebarLinks.Notifications
                     ) {
@@ -187,6 +201,8 @@ const SidebarNav = () => {
                 route={Routes.Profile}
                 link={SidebarLinks.Profile}
                 onClick={() => {
+                    dispatch(toggleNotifyPanel(false))
+                    dispatch(toggleSearchPanel(false))
                     dispatch(toggleSidebar(true))
                 }}
                 imgActive={userDefault}
